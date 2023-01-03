@@ -35,12 +35,12 @@ const Logo = styled.img`
 const NavbarSection = styled.div`
     flex: 1;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    gap: 12rem;
+
 `
 
-const LinkContainer = styled.div`
-    width: 100%;
-`
+const LinkContainer = styled.div``
 
 const Links = styled(Link)`
     font-size: 1.6rem;
@@ -56,7 +56,6 @@ const RightSection = styled.div`
 `
 
 const IconContainer = styled.div`
-    /* width: 100%; */
     font-size: 2.5rem;
 `
 
