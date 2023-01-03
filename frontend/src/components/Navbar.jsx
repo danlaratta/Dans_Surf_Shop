@@ -1,7 +1,7 @@
 import styled from 'styled-components/macro'
 import { Link } from 'react-router-dom'
 import NavLogo from '../assets/navLogo.png'
-import { IoCart } from 'react-icons/io5'
+import { IoCartOutline } from 'react-icons/io5'
 
 const Container = styled.div`
     width: 100%;
@@ -43,7 +43,7 @@ const NavbarSection = styled.div`
 const LinkContainer = styled.div``
 
 const Links = styled(Link)`
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     text-decoration: none;
     color: #000;
 `
@@ -56,7 +56,7 @@ const RightSection = styled.div`
 `
 
 const IconContainer = styled.div`
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 `
 
 
@@ -91,7 +91,7 @@ const Navbar = () => {
 
                 <RightSection>
                     <IconContainer>
-                        <IoCart />
+                        <IoCartOutline />
                     </IconContainer>
                 </RightSection>
             </Nav>

@@ -5,6 +5,7 @@ import Womens from './pages/Womens'
 import Accessories from './pages/Accessories'
 import Sale from './pages/Sale'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
           <Route path='/accessories' element={<Accessories />} />
           <Route path='/sale' element={<Sale />} />
         </Routes>
+
+        <Footer />
       </Router>
     
   )
