@@ -72,11 +72,11 @@ const Navbar = () => {
 
                 <NavbarSection>
                     <LinkContainer>
-                        <Links to='/men'> Men </Links>
+                        <Links to='/mens'> Men </Links>
                     </LinkContainer>
 
                     <LinkContainer>
-                        <Links to='/women'> Women </Links>
+                        <Links to='/womens'> Women </Links>
                     </LinkContainer>
 
                     <LinkContainer>

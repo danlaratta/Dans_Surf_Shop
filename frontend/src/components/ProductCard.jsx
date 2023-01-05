@@ -24,8 +24,6 @@ const ImageContainer = styled.div`
 
 const Image = styled.img`
     max-width: 65%;
-    height: auto;
-    object-fit: initial;
 
     &:hover {
         transform: scale(1.1);
