@@ -6,6 +6,7 @@ import Accessories from './pages/Accessories'
 import Sale from './pages/Sale'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import ProductDetail from './pages/ProductDetail'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path='/womens' element={<Womens />} />
           <Route path='/accessories' element={<Accessories />} />
           <Route path='/sale' element={<Sale />} />
+          <Route path='/product' element={<ProductDetail />} />
         </Routes>
 
         <Footer />

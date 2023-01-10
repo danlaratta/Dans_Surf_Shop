@@ -1,4 +1,5 @@
 import styled from 'styled-components/macro'
+import { Link } from 'react-router-dom'
 
 const Container = styled.div`
     width: 100%;
@@ -13,6 +14,8 @@ const Wrapper = styled.div`
     align-items: center;
 `
 
+const ProductDetailLink = styled(Link)`
+`
 
 const ImageContainer = styled.div`
     min-height: 25.2rem;
@@ -27,6 +30,7 @@ const Image = styled.img`
 
     &:hover {
         transform: scale(1.1);
+        cursor: pointer;
     }
 `
 
@@ -56,14 +60,16 @@ const ProductCard = ({image, title, price}) => {
     return (
         <Container>
             <Wrapper>
-                <ImageContainer>
-                    <Image src={image} alt="product imgs" />
-                </ImageContainer>
+                <ProductDetailLink to='/product'> 
+                    <ImageContainer>
+                        <Image src={image} alt="product imgs" />
+                    </ImageContainer>
+                </ProductDetailLink>
 
-                <TextContainer>
-                    <Title> { title } </Title>
-                    <Price> { price } </Price>
-                </TextContainer>
+                    <TextContainer>
+                        <Title> { title } </Title>
+                        <Price> { price } </Price>
+                    </TextContainer>
             </Wrapper>
         </Container>
     )

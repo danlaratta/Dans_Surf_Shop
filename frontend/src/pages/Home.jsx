@@ -21,6 +21,7 @@ const Content = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10rem 0rem;
 `
 
 const Wrapper = styled.div`
@@ -34,7 +35,6 @@ const LinksContainer = styled.div`
     width: 100%;
     display: flex;
     gap: 3rem;
-    margin-top: 5rem;
 `
 
 const LinksItem = styled.div`

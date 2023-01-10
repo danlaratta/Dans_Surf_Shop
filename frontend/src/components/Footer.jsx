@@ -7,7 +7,6 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     background-color: #000;
-    margin-top: 10rem;
 `
 
 const Wrapper = styled.div`
