@@ -178,8 +178,8 @@ const Home = () => {
     }, [])
 
     let details = [
-        {'id': 1, 'image': Img1, 'path': '/men', 'linkText': 'Men'},
-        {'id': 2, 'image': Img2, 'path': '/women', 'linkText': 'Women'},
+        {'id': 1, 'image': Img1, 'path': '/mens', 'linkText': 'Men'},
+        {'id': 2, 'image': Img2, 'path': '/womens', 'linkText': 'Women'},
         {'id': 3, 'image': Img3, 'path': '/accessories', 'linkText': 'Accessories'},
     ] 
 
