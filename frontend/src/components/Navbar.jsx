@@ -1,7 +1,9 @@
+import { useContext } from 'react'
 import styled from 'styled-components/macro'
 import { Link } from 'react-router-dom'
 import NavLogo from '../assets/navLogo.png'
 import { IoCartOutline } from 'react-icons/io5'
+import CartContext from '../context/CartContext'
 
 const Container = styled.div`
     width: 100%;
@@ -43,7 +45,7 @@ const NavbarSection = styled.div`
 const LinkContainer = styled.div``
 
 const Links = styled(Link)`
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     text-decoration: none;
     color: #000;
 `
@@ -55,12 +57,39 @@ const RightSection = styled.div`
     justify-content: flex-end;
 `
 
-const IconContainer = styled.div`
-    font-size: 2.2rem;
+const IconContainer = styled.div``
+
+const CheckoutLink = styled(Link)`
+    text-decoration: none;
+    font-size: 3rem;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+const AmountContainer = styled.div`
+    width: 1.4rem;
+    height: 1.4rem;
+    padding: 0.3rem;
+    background-color: #000;
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
+
+const AmountText = styled.span`
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 400;
 `
 
 
 const Navbar = () => {
+
+    const {cartItems} = useContext(CartContext)
+
     return (
         <Container>
             <Nav>
@@ -91,7 +120,13 @@ const Navbar = () => {
 
                 <RightSection>
                     <IconContainer>
-                        <IoCartOutline />
+                        <CheckoutLink to='/checkout'>
+                            <IoCartOutline />
+                            
+                            <AmountContainer>
+                                <AmountText> {cartItems.length} </AmountText>
+                            </AmountContainer>
+                        </CheckoutLink>
                     </IconContainer>
                 </RightSection>
             </Nav>

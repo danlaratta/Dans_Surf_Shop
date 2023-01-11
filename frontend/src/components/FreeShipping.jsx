@@ -16,7 +16,7 @@ const FreeShippingBanner = styled.div`
 `
 
 const BannerText = styled.span`
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #fff;
 
 `

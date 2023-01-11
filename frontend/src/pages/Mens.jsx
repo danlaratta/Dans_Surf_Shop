@@ -4,7 +4,7 @@ import Products from '../components/Products'
 
 const Container = styled.div`
     width: 100%;
-    padding-top: 0.55rem;
+    padding-top: 1.9rem;
     display: flex;
     flex-direction: column;
     align-items: center;

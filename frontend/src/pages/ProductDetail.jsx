@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import styled from 'styled-components/macro'
 import TestImg from '../assets/test.jpeg'
 import FreeShipping from '../components/FreeShipping'
+import CartContext from '../context/CartContext'
+
 
 const Container = styled.div`
     width: 100%;
@@ -119,7 +121,10 @@ const Desc = styled.span`
     line-height: 1.6rem;
 `
 
-const ProductDetail = () => {
+const ProductDetail = ({name, price}) => {
+
+    const {addToCart} = useContext(CartContext)
+
     return (
         <Container>
             <FreeShipping />
@@ -162,7 +167,7 @@ const ProductDetail = () => {
                                 </DetailItems>
                             </DetailsContainer>
 
-                            <AddBtn> ADD TO CART </AddBtn>
+                            <AddBtn onClick={(() => addToCart(name, price))}> ADD TO CART </AddBtn>
 
                             <DetailsContainer>
                                 <DetailsTitle> DESCRIPTION:  </DetailsTitle>
