@@ -61,7 +61,7 @@ const IconContainer = styled.div``
 
 const CheckoutLink = styled(Link)`
     text-decoration: none;
-    font-size: 3rem;
+    font-size: 2.6rem;
     color: #000;
     display: flex;
     justify-content: center;
@@ -69,8 +69,8 @@ const CheckoutLink = styled(Link)`
 `
 
 const AmountContainer = styled.div`
-    width: 1.4rem;
-    height: 1.4rem;
+    width: 1.2rem;
+    height: 1.2rem;
     padding: 0.3rem;
     background-color: #000;
     border-radius: 0.25rem;
