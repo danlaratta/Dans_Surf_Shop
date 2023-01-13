@@ -4,7 +4,7 @@ import img from '../assets/test.jpeg'
 import { IoClose } from 'react-icons/io5'
 
 const Container = styled.div`
-    width: 50%;
+    width: 75%;
     padding: 1.5rem;
     background-color: #fff;
 `
@@ -19,7 +19,7 @@ const LeftSection = styled.div`
 `
 
 const Image = styled.img`
-    width: 100%;
+    width: 65%;
 `
 
 const RightSection = styled.div`
@@ -28,7 +28,7 @@ const RightSection = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
 `
 
 const LeftTextContainer = styled.div`
@@ -36,13 +36,13 @@ const LeftTextContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* gap: 3rem; */
+    padding-left: 1rem;
 `
 
 const Title = styled.span`
     font-size: 1.8rem;
-    font-weight: 500;
-    width: 85%;
+    font-weight: 700;
+    width: 100%;
 `
 
 const ColorContainer = styled.div`
@@ -52,20 +52,21 @@ const ColorContainer = styled.div`
 
 const Colors = styled.div`
     background-color: ${(props) => props.color};
-    width: 2rem;
-    height: 2rem;
+    width: 1.8rem;
+    height: 1.8rem;
     border-radius: 50%;
     border: 0.15rem solid #000;
 `
 
 const SubTitle = styled.span`
     font-size: 1.4rem;
-    font-weight: 500;
+    font-weight: 600;
     padding-right: 0.5rem;
 `
 
 const SizeContainer = styled.span`
-
+    display: flex;
+    align-items: center;
 `
 
 const Text = styled.span`
@@ -83,10 +84,7 @@ const QtySelect = styled.select`
     &:hover {
         cursor: pointer;
     }
-
 `
-
-
 
 const RightTextContainer = styled.div`
     height: 100%;
@@ -127,7 +125,6 @@ const CartCard = () => {
                         <ColorContainer>
                             <SubTitle> Color: </SubTitle>
                             <Colors color="#517daa" />
-                            {/* <Text> Navy </Text> */}
                         </ColorContainer>
 
                         <SizeContainer>
